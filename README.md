@@ -25,7 +25,7 @@ Create a GitHub repository for your project and submit a GitHub link for it.
 
 # Screenshot of Assignment 3:
 
-<img src="https:// ">
+<img src="https://github.com/thompln83/CPSC5330-Assignment-3-UIKit-Elements-Simple-Clock/blob/c94e9af87ff2bf6ede52488ed7533c000266aa66/UIKit_Elements/Docs/Screenshot%20Assignment%203.png">
 
 
 
