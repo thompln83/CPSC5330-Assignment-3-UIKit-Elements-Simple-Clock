@@ -18,7 +18,7 @@ Once the timer ends/music starts, change the button text to 'Stop Music'. (Extra
 Stop the music on the button click. Change the button text to 'Start Timer' and allow users to set a new timer.
 The application should run for all size classes, including iPads, and for the landscape orientation.
 
-Refer to Assignment 3 Instructions.PDF (see Docs folder) or [Assignment 3 PDF](https:// ) for the requirements in image form. 
+Refer to Assignment 3 Instructions.PDF (see Docs folder) or [Assignment 3 PDF](https://github.com/thompln83/CPSC5330-Assignment-3-UIKit-Elements-Simple-Clock/blob/cc1dad1d6effe00e148c068127bf208d65354f6d/UIKit_Elements/Docs/Assignment%203%20Instructions.png) for the requirements in image form. 
 
 # Deliverables:
 Create a GitHub repository for your project and submit a GitHub link for it.
