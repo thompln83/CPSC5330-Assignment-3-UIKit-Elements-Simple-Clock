@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit_Elements" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BbX-Rf-Sso" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0W-CK-p86">
+                                <rect key="frame" x="174.66666666666666" y="97" width="43.666666666666657" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="label1">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI3-Ha-1J1">
+                                <rect key="frame" x="136" y="508" width="115" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="timerButton"/>
+                                <connections>
+                                    <action selector="timerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9p-wM-MXM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6a-XA-Vgk">
+                                <rect key="frame" x="80" y="612" width="227" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xlg-xP-Dp0">
+                                <rect key="frame" x="-3" y="243" width="393" height="36"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c0W-CK-p86" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="0ht-Y1-3Ol"/>
+                            <constraint firstItem="c0W-CK-p86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tw-J8-9GV"/>
+                            <constraint firstItem="c0W-CK-p86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8HX-73-Pe6"/>
+                            <constraint firstItem="BbX-Rf-Sso" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8HX-Kh-yfV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P6a-XA-Vgk" secondAttribute="bottom" constant="184" id="EsR-66-lU4"/>
+                            <constraint firstItem="SI3-Ha-1J1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="FZg-7B-S2j"/>
+                            <constraint firstItem="P6a-XA-Vgk" firstAttribute="top" secondItem="SI3-Ha-1J1" secondAttribute="bottom" constant="69" id="Hsx-hl-1zY"/>
+                            <constraint firstItem="SI3-Ha-1J1" firstAttribute="centerX" secondItem="P6a-XA-Vgk" secondAttribute="centerX" id="Io3-U7-zui"/>
+                            <constraint firstItem="BbX-Rf-Sso" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MW3-4Z-aqp"/>
+                            <constraint firstAttribute="bottom" secondItem="BbX-Rf-Sso" secondAttribute="bottom" id="Med-d3-dAz"/>
+                            <constraint firstItem="BbX-Rf-Sso" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rfd-f9-q8V"/>
+                            <constraint firstItem="P6a-XA-Vgk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="V0p-1e-Kv0"/>
+                            <constraint firstAttribute="bottom" secondItem="SI3-Ha-1J1" secondAttribute="bottom" constant="309" id="WtA-eL-hBM"/>
+                            <constraint firstItem="Xlg-xP-Dp0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="243" id="YTW-d0-Sm3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P6a-XA-Vgk" secondAttribute="trailing" constant="86" id="d3i-Sf-GFK"/>
+                            <constraint firstItem="Xlg-xP-Dp0" firstAttribute="centerX" secondItem="SI3-Ha-1J1" secondAttribute="centerX" id="eEL-Id-5ga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xlg-xP-Dp0" secondAttribute="trailing" constant="3" id="fmx-yL-eo0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="BbX-Rf-Sso" id="iAx-hD-Vvl"/>
+                        <outlet property="label1" destination="c0W-CK-p86" id="5eH-0Z-10e"/>
+                        <outlet property="label2" destination="P6a-XA-Vgk" id="jJ9-Wf-xXW"/>
+                        <outlet property="timePicker" destination="Xlg-xP-Dp0" id="gxX-Hu-eCG"/>
+                        <outlet property="timerButton" destination="SI3-Ha-1J1" id="1Un-xN-H3F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
